@@ -3391,7 +3391,8 @@ Play Area
   width: unset !important;
   text-align: center;
   cursor: pointer;
-  opacity: 0.3;
+  /* opacity: 0.3; */
+  opacity: 1;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   transition: var(--transition);
 }
@@ -6363,7 +6364,7 @@ Preloader CSS
 }
 .glories-logo{
     background-color: var(--whiteColor);
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.06);
+    box-shadow:0 0 15px rgb(0 0 0 / 17%);
     width: 75px;
     height: 75px;
     margin: 0 auto;
@@ -6432,6 +6433,10 @@ Preloader CSS
   -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
   margin-bottom: 30px;
+  transition: transform 0.65s cubic-bezier(0.05, 0.2, 0.1, 1), box-shadow 0.65s cubic-bezier(0.05, 0.2, 0.1, 1);
+  position: relative;
+  z-index: 2;
+  height: 100%;
 }
 .services-thumb {
   -webkit-border-radius: 10px 10px 0 100px;
@@ -6448,21 +6453,7 @@ Preloader CSS
   position: relative;
   z-index: 1;
 }
-.shine-animate::before {
-  position: absolute;
-  top: 0;
-  left: -100%;
-  display: block;
-  content: "";
-  width: 50%;
-  height: 100%;
-  background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
-  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.3)));
-  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
-  -webkit-transform: skewX(-25deg);
-  -ms-transform: skewX(-25deg);
-  transform: skewX(-25deg);
-}
+
 .services-thumb img {
   height: 350px;
   object-fit: cover;
@@ -6518,9 +6509,25 @@ Preloader CSS
 .services-item:hover {
   box-shadow: 0px 4px 30px 0px #cfdee4;
 }
+
 .services-item:hover .services-content .icon {
   background: #191d88;
   color: #ffff;
 }
+
 /*SERVICES*/
+.global-feature-logo{
+    /* background-color: var(--whiteColor);
+    box-shadow: 0 0 15px rgb(0 0 0 / 17%); */
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    padding: 5px;
+    border-radius: 10px;
+    flex: 0 0 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
 /*rahul add css*/

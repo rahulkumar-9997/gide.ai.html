@@ -1,6 +1,6 @@
 (function($) {
     'use strict';
-
+    // animationOnHover();
     // Mean Menu
 	$('.mean-menu').meanmenu({
 		meanScreenWidth: "991"
@@ -446,6 +446,19 @@ function toggleTheme() {
         setTheme('theme-dark');
     }
 }
+
+// function animationOnHover () {
+//     let cards = document.querySelectorAll('.tmponhover');
+//     cards.forEach((tmpOnHover) => {
+//     tmpOnHover.onmousemove = function (e) {
+//         let rect = tmpOnHover.getBoundingClientRect();
+//         let x = e.clientX - rect.left; // element X position
+//         let y = e.clientY - rect.top;  // element Y position
+//         tmpOnHover.style.setProperty('--x', `${x}px`);
+//         tmpOnHover.style.setProperty('--y', `${y}px`);
+//     };
+//     });
+// }
 
 // Immediately invoked function to set the theme on initial load
 (function () {
