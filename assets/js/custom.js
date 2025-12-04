@@ -154,7 +154,7 @@
     // Categories Slider
     $('.categories-slider').owlCarousel({
         loop: true,
-        margin: 30,
+        margin: 10,
         autoHeight: true,
         nav: true,
         dots: false,
