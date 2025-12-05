@@ -64,10 +64,16 @@
     $('.brand-slider').owlCarousel({
         loop: true,
         margin: 30,
-        nav: false,
+        nav: true,
         dots: false,
         autoplay: true,
         autoplayHoverPause: true,
+        smartSpeed: 800,
+        autoplayTimeout: 3000, 
+        navText: [
+            "<i class='flaticon-left-arrow'></i>",
+            "<i class='flaticon-chevron'></i>"
+        ],
         responsive:{
             0:{
                 items: 2
@@ -83,6 +89,25 @@
             },
         }
     })
+    /**video slider */
+    $('.video-slider').owlCarousel({
+        loop: true,
+        margin: 30,
+        nav: false,
+        dots: true,
+        autoplay: true,
+        autoplayHoverPause: true,
+        smartSpeed: 800,
+        autoplayTimeout: 3000,
+        
+        responsive:{
+            0:{ items: 1 },
+            520:{ items: 1 },
+            668:{ items: 1 },
+            1000:{ items: 1 }
+        }
+    });
+
 
     // Testimonials Slider
     $('.testimonials-slider').owlCarousel({
@@ -429,7 +454,7 @@
 	});
 
     // Switch Btn
-    $('body').append("<div class='switch-box'><label id='switch' class='switch'><input type='checkbox' onchange='toggleTheme()' id='slider'><span class='slider round'></span></label></div>");
+    // $('body').append("<div class='switch-box'><label id='switch' class='switch'><input type='checkbox' onchange='toggleTheme()' id='slider'><span class='slider round'></span></label></div>");
 })($);
 
 // function to set a given theme/color-scheme
