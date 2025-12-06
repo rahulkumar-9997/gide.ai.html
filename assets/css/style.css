@@ -6576,7 +6576,7 @@ Footer Area
 }
 
 .footer-widget {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 .footer-widget .footer-logo {
@@ -6584,14 +6584,14 @@ Footer Area
 }
 
 .footer-widget h3 {
-  margin-top: 0;
-  font-size: 22px;
-  margin-bottom: 12px;
-  color: var(--whiteColor);
-  display: block;
-  position: relative;
-  z-index: 1;
-  padding-bottom: 5px;
+    margin-top: 0;
+    font-size: 22px;
+    margin-bottom: 24px;
+    color: var(--whiteColor);
+    display: block;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 7px;
 }
 
 .footer-widget h3::before {
@@ -6764,6 +6764,7 @@ Footer Area
 .copy-right-text p {
   color: var(--whiteColor);
   margin-bottom: 0;
+  font-size: 16px;
 }
 
 .copy-right-text p b {
@@ -7913,13 +7914,14 @@ Preloader CSS
 .member-we-support-title .member-t,
 .app-title .download-title{
     margin-top: 0;
-    font-size: 22px;
+    font-size: 20px;
     margin-bottom: 12px;
     color: var(--whiteColor);
     display: block;
     position: relative;
     z-index: 1;
     padding-bottom: 5px;
+    font-weight: 600;
 }
 .member-support-section{
    grid-column-gap: 16px;
@@ -7946,7 +7948,7 @@ Preloader CSS
     display: grid;
 }
 .app-item img{
-    width: 172px;
+    width: 130px;
     max-width: 100%;
     display: inline-block;
 }
