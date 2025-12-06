@@ -6578,9 +6578,14 @@ Footer Area
 .footer-widget {
   margin-bottom: 15px;
 }
+.footer-logo-text {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    grid-column-gap: 16px;
+}
 
 .footer-widget .footer-logo {
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 .footer-widget h3 {
@@ -7896,7 +7901,8 @@ Preloader CSS
   }
 }
 .footer-logo img{
-  width:  10%;
+  width: 100%; 
+  height: auto;
 }
 /*footer csss*/
 .communities-logo-section{
@@ -7944,7 +7950,6 @@ Preloader CSS
     grid-template-rows: minmax(auto, .25fr);
     grid-template-columns: 1fr 1fr;
     grid-auto-columns: 1fr;
-    font-family: Product Sans, sans-serif;
     display: grid;
 }
 .app-item img{
