@@ -7956,7 +7956,7 @@ Preloader CSS
 .footer-bo-top .foo-title{
   color: var(--whiteColor);
   margin-bottom: 10px;
-  text-align: center;
+  /* text-align: center; */
 }
 .footer-color .acolor{
   color: var(--whiteColor);
