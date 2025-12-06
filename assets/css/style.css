@@ -1574,7 +1574,7 @@ Main Banner Area
 
 .hero-content h1 {
   font-size: 50px;
-  color: var(--titleColor);
+  color: var(--redColor);
   margin-bottom: 5px;
   line-height: 55px;
 }
@@ -3959,16 +3959,28 @@ Play Area
 .brand-item {
   text-align: center;
 }
+.global-logo {
+    position: relative;
+}
+.global-logo:before {
+    content: "";
+    display: block;
+    height: 0;
+    width: 100%;
+}
+.global-logo:before {
+    padding-bottom: 100%;
+    margin-top: 1px;
+}
 
 .brand-item img {
-  width: unset !important;
-  text-align: center;
-  cursor: pointer;
-  /* opacity: 0.3; */
-  opacity: 1;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  transition: var(--transition);
-  object-fit: contain;
+    height: 100%;
+    left: 0;
+    -o-object-fit: contain;
+    object-fit: contain;
+    position: absolute;
+    top: 0;
+    width: 100%;
 }
 
 .brand-item .brand-item-logo2 {
@@ -7646,6 +7658,7 @@ Preloader CSS
   background-clip: border-box;
   padding: 5px;
   border-radius: 10px;
+  position: relative;
 }
 
 .global-logo {
@@ -7890,14 +7903,15 @@ Preloader CSS
     align-items: center;
 }
 .communities-logo img{
-  width: 80%;
+  width: 100px;
 }
 
 [data-view="6-3"] .grid-item-footer {
     flex: 0 0 32.66667%;
 }
 .communities-title a,
-.member-we-support-title .member-t{
+.member-we-support-title .member-t,
+.app-title .download-title{
     margin-top: 0;
     font-size: 22px;
     margin-bottom: 12px;
@@ -7916,6 +7930,54 @@ Preloader CSS
     grid-auto-columns: 1fr;
     font-family: Product Sans, sans-serif;
     display: grid;
+}
+
+.member-we-support-logo img {
+    width: 150px;
+}
+.app-store{
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    flex-direction: column;
+    grid-template-rows: minmax(auto, .25fr);
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    font-family: Product Sans, sans-serif;
+    display: grid;
+}
+.app-item img{
+    width: 172px;
+    max-width: 100%;
+    display: inline-block;
+}
+.footer-contact a{
+  color: var(--whiteColor);
+}
+.footer-bo-top .foo-title{
+  color: var(--whiteColor);
+  margin-bottom: 10px;
+  text-align: center;
+}
+.footer-color .acolor{
+  color: var(--whiteColor);
+}
+.mask-x {
+  mask-image: linear-gradient( to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 10%, rgb(0, 0, 0) 90%, rgba(0, 0, 0, 0) 100% );
+}
+.ticker-wrapper {
+  contain: layout style paint;
+}
+
+
+.brand-slider-rt1,
+.brand-slider-rt2 {
+    display: flex;
+    white-space: nowrap;
+    will-change: transform;
+}
+
+.brand-item {
+    flex-shrink: 0;
 }
 /*footer csss*/
 
